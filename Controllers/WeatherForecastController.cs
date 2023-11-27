@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace API.Controllers
+namespace WebApplication1.Controllers
 {
     [ApiController]
     [Route("[controller]")]
@@ -9,7 +9,7 @@ namespace API.Controllers
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
+    };
 
         private readonly ILogger<WeatherForecastController> _logger;
 
@@ -29,6 +29,5 @@ namespace API.Controllers
             })
             .ToArray();
         }
-
     }
 }
