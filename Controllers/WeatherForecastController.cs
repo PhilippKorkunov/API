@@ -21,6 +21,7 @@ namespace API.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public WeatherForecast Get(int index)
         {
+
             return new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
