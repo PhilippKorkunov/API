@@ -20,7 +20,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }} ##логин от аккаунта 
           password: ${{ secrets.DOCKER_PASSWORD }} ##пароль от аккаунта
     
-      - name: Docker loggin in ##вход в учетную запись dockerhub, куда будет зугружен собранный образ на dockerhub
+      - name: Docker pushing  ##вход в учетную запись dockerhub, куда будет зугружен собранный образ на dockerhub
         uses: docker/build-push-action@v5
         with:
           context: "./" ##Путь к папке с проектом для сборки
